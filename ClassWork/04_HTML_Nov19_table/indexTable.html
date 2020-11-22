@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table</title>
+</head>
+
+<body>
+    <h1 align="center">Table</h1>
+    <br>
+    <table align="center" border="1" cellpadding="10" cellspacing="10">
+        <tr>
+            <td>Coll 1</td>
+            <td>Coll 2</td>
+            <td>Coll 3</td>
+        </tr>
+        <tr>
+            <td width="30%"><p>Lorem ipsum dolor sit amet.</p></td>
+            <td width="100"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></td>
+            <!-- вертикальное выравнование valign -->
+            <td valign="top"><p>Lorem ipsum dolor.</p></td>
+        </tr>
+        <tr>
+            <td>First text</td>
+            <!-- Объединение ячеек colspan - в строке, в рядах - rowspan -->
+            <td colspan="2">Second text</td>
+        </tr>
+<tr>
+    <td>Item 1</td>
+    <td>Item 2</td>
+       <td >Item 3</td>
+</tr>
+<tr>
+    <td>Sub item 1</td>
+    <td>Sub item 2</td>
+    <td rowspan="2">Sub item 3</td>
+</tr>
+<tr>
+    <td colspan="2">Subsub item</td>
+</tr>
+    </table>
+
+</body>
+
+</html>
