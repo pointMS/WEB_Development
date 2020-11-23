@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form&Table</title>
+</head>
+
+<body>
+    <h1>Form / input etc</h1>
+    <h3>Simple input</h3>
+    <input type="text">
+    <h3>Main types of forms</h3>
+    <form action="#" method="GET">
+        Name: <br> <input type="text" placeholder="your name" size="50px"> <br><br>
+        Age: <br>
+        <input type="number" max="100" min="0" step="5" value="10"> <br><br>
+        Gender: <br>
+        <input type="radio" checked value="female" name="gender">Female
+        <input type="radio" checked value="male" name="gender">Male <br><br>
+        <input type="submit" value="send"> <br><br>
+        Value: <br>
+        <input type="range" max="300" min="0" step="5" name="myrange">
+        <input type="submit" value="send"> <br><br>
+        Email: <br>
+        <input type="email" name="yourmail"><br><br>
+        <input type="submit" value="send"><br><br>
+        Checkbox: <br>
+        <input type="checkbox"> I accept <br><br>
+        Car: <br>
+        <select name="car" id="">
+            <option value=""></option>
+            <option value="BMW">BMW</option>
+            <option value="VW">Volkswagen</option>
+            <option value="AUDI">AUDI</option>
+            <option value="LADA" disabled>LADA</option>
+        </select> <br><br><br>
+        Color:
+        <br>
+        <input type="color"><br>
+        Password: <br>
+        <input type="password"> <input type="image" src="../../HomeWork/HW02_17.11.20/images/sciencebird_chef_icon.png"
+            width="30"><br><br>
+        Date: <br>
+        <input type="date"> <br>
+        Message: <br>
+        <textarea name="" id="" cols="90" rows="10" placeholder="just text"></textarea><br>
+    </form>
+
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Contact</legend>
+            <p><label for="name">Name</label> <br>
+                <input type="text" id="name" name="name">
+            </p>
+            <p><label for="email">Email</label><br>
+                <input type="email" id="email">
+            </p>
+            <p><label for="tel">Phone number</label><br>
+                <input type="tel" id="tel">
+            </p>
+        </fieldset>
+        <p> <input type="submit" value="send">
+            <input type="reset" value="clear">
+            <input type="button" value="stop">
+        </p>
+    </form>
+</body>
+
+</html>
