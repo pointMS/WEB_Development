@@ -1,0 +1,27 @@
+/* *{
+color: rgb(26, 26, 231);  
+} */
+
+p {
+  color: green;
+}
+
+.myClass {
+  color: rgb(212, 196, 198);
+}
+
+#myId1 {
+  background-color: bisque;
+}
+
+p#title span {
+  color: red;
+}
+
+ul {
+  color: red;
+}
+
+a {
+  color: inherit;
+}
