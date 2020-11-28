@@ -1,0 +1,55 @@
+body{
+  _background-color: rgb(151, 250, 217);
+}
+
+.wrapper{
+  width: 400px;
+  height: 400px;
+  margin: 150px auto;
+  border: 1px solid rgb(238, 31, 31);
+  _position: relative;
+  _overflow: hidden;
+  z-index: 0;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
+}
+
+.box1{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(251, 225, 121, 0.692);
+  position: relative;
+  left: 300px;
+  top: 50px;
+  z-index: -1;
+  position: fixed;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(29, 207, 44);
+  /* position: relative; */
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+
+.box3{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(93, 95, 236, 0.548);
+  position: relative;
+  top: 30px;
+  left: -10px;
+  z-index: 1;
+}
+
+.sticky{
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  position:sticky;
+  top: 10px;
+  left: 50px;
+}

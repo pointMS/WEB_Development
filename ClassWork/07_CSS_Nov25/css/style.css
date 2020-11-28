@@ -42,6 +42,10 @@ body{
   height: 50px;
 }
 
+.clearfix{
+  clear: both;
+}
+
 .box-one b{
  display: block; 
 }
