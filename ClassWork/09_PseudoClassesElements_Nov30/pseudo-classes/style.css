@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 10px;
+}
+
+a.ex1:hover {
+  color: rgb(255, 0, 0);
+}
+
+a.ex2:hover {
+  font-size: 150%;
+}
+
+a.ex3:hover {
+  background-color: crimson;
+}
+
+a.ex4:visited,
+a.ex4:link {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+a.ex4:hover,
+a.ex4:active {
+  text-decoration: underline;
+}
+
+.paragraph {
+  margin: 10px;
+}
+
+.paragraph a:link {
+  color: pink !important;
+}
+
+.paragraph a:visited {
+  color: greenyellow;
+}
+
+.paragraph a:hover {
+  background-color: yellowgreen;
+}
+
+.paragraph a:active {
+  color: red;
+}
+
+p.paragraph:active {
+  background-color: gainsboro;
+}
+
+.ex5 {
+  margin: 50px 10px 0;
+}
+
+.ex5 p {
+  display: none;
+  background-color: hotpink;
+  padding: 20px;
+}
+
+.ex5:hover p {
+  display: block;
+}
+
+nav {
+  background-color: green;
+  margin-bottom: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+  width: 200px;
+}
+
+ul li:hover {
+  background: rgba(21, 153, 76, 0.8);
+}
+
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul li {
+  background: rgba(21, 153, 76, 0.8);
+}
+
+ul li ul li:hover {
+  background: rgba(46, 45, 45, 0.7);
+}
