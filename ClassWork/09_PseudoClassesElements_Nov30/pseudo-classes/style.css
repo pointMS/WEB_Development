@@ -107,3 +107,20 @@ ul li ul li {
 ul li ul li:hover {
   background: rgba(46, 45, 45, 0.7);
 }
+
+ul li ul li:first-child a{
+  color: aquamarine;
+}
+
+ul li ul li:nth-child(2n):hover{
+  background-color: green;
+}
+
+article{
+  margin-top: 30px;
+}
+
+article p:first-child::first-line{
+  font-size: 120%;
+  font-weight: bold;
+}
