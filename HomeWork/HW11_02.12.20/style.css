@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: url("./images/Tomatoes_Pasta.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.wrapper {
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+  padding-top: 2rem;
+}
+
+header .nav img.logo {
+  float: left;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: rgba(255, 0, 0, 0.712);
+  border-radius: 50%;
+}
+
+header .nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header .nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+header .title {
+  padding-top: 20rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header .title h3 {
+  font-style: italic;
+  text-transform: none;
+  font-family: serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header .title h1 {
+  font-size: 5rem;
+}
+
+header .title .button {
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px;
+  width: 200px;
+  margin: 30px auto;
+}
+
+header .title .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+header .title p span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*** second section with pictures***/
+
+#recipes {
+  padding: 50px 0;
+}
+
+#recipes h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#recipes hr {
+  width: 100px;
+  height: 1px;
+  border-color: tomato;
+  margin: 5px auto 20px;
+}
+
+#recipes .card-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin: 2px;
+  flex-basis: 250px;
+  margin-bottom: -1px;
+}
+
+#recipes .card img {
+  width: 100%;
+}
+
+#recipes .card h3 {
+  position: absolute;
+  top: 35%;
+  font-size: 2rem;
+  width: 100%;
+  font-weight: 700;
+  color: white;
+}
+
+#recipes .card h3 span {
+  display: block;
+  position: absolute;
+  top: -20px;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 60vh;
+  }
+
+  header .nav img.logo {
+    float: none;
+    margin: 30px auto;
+    left: calc(100vw / 3);
+    top: calc(100vh / 20);
+    width: 15%;
+  }
+
+  header .title {
+    padding-top: 180px;
+  }
+
+  header .title h1 {
+    font-size: 4rem;
+  }
+
+  header .title p {
+    display: none;
+  }
+
+  header .title .button {
+    margin: 20px auto;
+  }
+
+  #recipes .card-section .card {
+    flex-basis: 30%;
+  }
+
+  #recipes .card h3{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 80vh;
+    width: 100vw;
+  }
+
+  header ul li:not([class="menu"]) {
+    display: none;
+  }
+
+  header .nav img.logo {
+    float: none;
+    margin: 30px auto;
+    left: calc(80vw / 3);
+    top: calc(100vh / 20);
+    width: 30%;
+  }
+
+  header .title h3 {
+    margin-top: 30px;
+    font-size: 1.1rem;
+  }
+
+  header .title h1 {
+    font-size: 3rem;
+  }
+
+  header .title p {
+    display: inherit;
+  }
+
+  header .title .button {
+    padding: 10px;
+    width: 150px;
+  }
+
+  #recipes .card-section .card {
+    flex-basis: 40%;
+  }
+
+  #recipes .card h3{
+    font-size: 1.2rem;
+  }
+}
