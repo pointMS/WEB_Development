@@ -1,0 +1,402 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+/* *******Header********* */
+#header {
+  color: white;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.022846638655462215) 25%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("./images/Tomatoes_Pasta.jpg");
+  background-size: cover;
+  height: 100vh;
+  min-height: 800px;
+}
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#header .nav {
+  padding: 30px 0;
+  overflow: hidden;
+}
+#header .logo {
+  float: left;
+  width: 120px;
+  height: 120px;
+  background-color: #fe0804ca;
+  border-radius: 50%;
+}
+
+.nav .logo img {
+  width: 90%;
+  position: relative;
+  top: 5px;
+  right: 2px;
+}
+#header .nav ul {
+  float: right;
+  margin-top: 20px;
+}
+
+#header .nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+#header h3 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 120px;
+  font-size: 2.5rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+#header h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+#header a {
+  display: inline-block;
+  margin: 20px 0 40px;
+  border: 2px solid white;
+  padding: 20px 80px;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* animation-name: grow; */
+  -webkit-transition: background-color 4s, border-reaius 4s, transform scale 4s, font-size 4s;
+  transition: 2s;
+}
+
+#header a:hover{
+  background-color: rgba(255, 255, 255, 0.294);
+  border-radius: 20px;
+  transform: scale(1.05);
+  font-size: 1.1rem;
+}
+
+/* @keyframes grow{
+  from{
+    background-color: inherit;
+  }
+  to{
+    background-color:  rgba(255, 255, 255, 0.294); 
+    border-radius: 20px;
+    transform: scale(1.05);
+    font-size: 1.1rem;
+  }
+} */
+
+#header h4 {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+#header h4 span {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: underline;
+}
+
+#header h4 span:hover {
+  cursor: pointer;
+}
+
+/* *** Get section *** */
+
+.wrapper2{
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  
+}
+
+#get-section{
+  display: flex;
+  margin: 50px 0;
+  justify-content: space-between;
+}
+
+/*картинки растягиваются и округляются снизу - ?*/
+#get-section .row img{
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 12px;
+  width: 70px;
+  height: 70px;
+}
+
+#get-section .row h4{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+#get-section .row hr{
+  border: 1px solid orange;
+  background-color: orange;
+  width: 80px;
+  margin: 0 auto 15px;
+}
+
+#get-section .row p{
+  padding: 0 30px;
+}
+
+/* *** App section *** */
+#app-section{
+  display: flex;
+  margin-top: 100px;
+  overflow: hidden;
+  height: 55vh;
+}
+
+#app-section .phone{
+  display: block;
+  background: url("./images/iphone.png") no-repeat;
+  min-width: 45%;
+  background-position: top left;
+  background-size: 80%;
+   z-index: 0;
+  position: relative;
+ }
+
+ /* не обрезает img снизу при небольшом изменении размера экрана */
+#app-section .phone img{
+display: block;
+width: 60%;
+position: absolute;
+top: 7vw;
+left: 3.5vw;
+z-index: 1;
+}
+
+#app-section .about-app{
+  text-align: left;
+  margin-top: 50px;
+}
+
+#app-section .about-app h4{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#app-section .about-app hr{
+  border: 1px solid orange;
+  background-color: orange;
+  width: 80px;
+  margin: 1rem 0;
+}
+
+#app-section .about-app p{
+  margin-bottom: 2rem;
+}
+
+#app-section .about-app .icons img{
+  margin-right: 1rem;
+}
+
+/* **** Review section **** */
+#review{
+  background: linear-gradient(
+    0deg,
+ rgba(0,0,0,1) 0%,
+ rgba(255,255,255, 0) 55%,
+ rgba(255,255,255,0) 100% ),
+  url("./images/Tomatoes_Pasta.jpg") no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 40vh;
+}
+
+#review .wrapper3{
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  height: 30vh;
+}
+
+#review img{
+  margin: 70px 0 10px;
+  border-radius: 50%;
+}
+
+#review p{
+  font-size:22px ;
+  font-weight:100;
+}
+
+#review p.name{
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#review div.point{
+  display: inline-block;
+  margin: 20px 10px;
+  border: 5px solid rgba(255, 255, 255, 0.585);
+  border-radius: 30%;
+}
+
+#review div.point.first{
+  border: 6px solid rgba(255, 255, 255);
+}
+
+#review div.point.second{
+  width: 16px; /* не убирается полоска внутри*/
+}
+
+/* ******Recipes-section******* */
+
+#recipes {
+  padding-top: 40px;
+}
+
+#recipes h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#recipes .divider {
+  height: 2px;
+  width: 80px;
+  margin: 0 auto 40px;
+  background-color: orange;
+}
+
+#recipes .card-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin: 2px;
+  flex-basis: 250px;
+  margin-bottom: -2px;
+}
+
+#recipes .card img {
+  width: 100%;
+}
+
+#recipes .card h3 {
+  position: absolute;
+  top: 35%;
+  font-size: 2rem;
+  width: 100%;
+  font-weight: 700;
+  color: white;
+}
+
+#recipes .card h3 span {
+  display: block;
+  position: absolute;
+  top: -20px;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+}
+/* ******MediaQuery******** */
+
+@media only screen and (max-width: 800px) {
+  #header {
+    min-height: min-content;
+    max-height: 600px;
+  }
+  #header h3 {
+    margin-top: 150px;
+    font-size: 1.5rem;
+  }
+  #header h1 {
+    font-size: 4rem;
+  }
+  #header a {
+    font-size: 0.8rem;
+    padding: 10px 50px;
+  }
+  #header h4 {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 60px);
+  }
+  .wrapper2{
+    width: 100vw;
+    padding: 0 30px;
+  }
+  #app-section{
+    margin-top: 20px;
+  }
+  #app-section div.about-app{
+    margin-top: 10px;
+  }
+  #app-section .phone{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #header .logo {
+    width: 160px;
+    height: 160px;
+    left: calc(50% - 80px);
+  }
+  #header .nav ul li:not(:last-child) {
+    display: none;
+  }
+  #header .nav ul li:last-child {
+    width: 25px;
+  }
+  #header .nav ul li:last-child img {
+    width: 100%;
+  }
+  #header h3 {
+    margin-top: 180px;
+  }
+  .card {
+    flex-basis: 220px;
+  }
+  #header h4 {
+    display: inline-block;
+  }
+  #header h4 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #recipes .card h3 {
+    font-size: 1.3rem;
+  }
+  #app-section, #review, #get-section p, #get-section hr{
+    display: none;
+  }
+  #get-section{
+    flex-direction: column;
+  } 
+}
